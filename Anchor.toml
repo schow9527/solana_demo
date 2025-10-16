@@ -1,0 +1,19 @@
+[toolchain]
+anchor_version = "0.29.0"
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+my_oapp = "7qKAo1CTuW8jkucoStjfheWo3iXXnvyoKs1QMxKiygZF"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://api.devnet.solana.com"
+wallet = "/home/lsz2/my_solana_wallet.json"
+
+[scripts]
+test = "yarn run ts-mocha -b -p ./tsconfig.json -t 10000000 sdk/tests/**/*.test.ts"
